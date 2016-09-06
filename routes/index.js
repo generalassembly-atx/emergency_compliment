@@ -6,6 +6,13 @@ function randomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
+function getRandomCompliments() {
+  var compliments = [
+    "You are appreciated by many of you team members",
+    "Your bartender appreciates your patience",
+    ""
+  ]
+}
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Emergency Comlipent' });
