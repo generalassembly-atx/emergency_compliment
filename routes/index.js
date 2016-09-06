@@ -10,8 +10,10 @@ function getRandomCompliments() {
   var compliments = [
     "You are appreciated by many of you team members",
     "Your bartender appreciates your patience",
-    ""
-  ]
+    "Its a beautiful day and so are you",
+    "Good answer",
+  ];
+  return compliments[Math.floor(Math.random() * compliments.length)];
 }
 /* GET home page. */
 router.get('/', function(req, res, next) {
