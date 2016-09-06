@@ -17,7 +17,15 @@ function getRandomCompliments() {
 }
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Emergency Comlipent' });
+  res.render('index', { title: 'Emergency Comlipent',
+  compliment: getRandomCompliments()
+  });
+});
+
+router.get('/:name', (req, res, next) => {
+  const name = req.params.name;
+
+  // $('#compliments').text(res.send('Compliments '+ name))
 });
 
 
