@@ -12,6 +12,7 @@ function getRandomCompliments() {
     "Your bartender appreciates your patience",
     "Its a beautiful day and so are you",
     "Good answer",
+    
   ];
   return compliments[Math.floor(Math.random() * compliments.length)];
 }
