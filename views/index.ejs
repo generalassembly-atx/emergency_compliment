@@ -2,6 +2,11 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <div class="compliment">
-      <h1><%= compliment %></h1>
+      <h1><% if(name){ %><%= name %>,&nbsp;<%}%><%= compliment %></h1>
     </div>
+    <h2>Add Compliment:</h2>
+    <form class="compliment_form" action="/" method="post">
+      <input type="text" name="compliment" value="">
+      <button type="submit" name="button">Add</button>
+    </form>
 <% include ./partials/footer %>
