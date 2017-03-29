@@ -1,0 +1,1 @@
+var random = items[Math.floor(Math.random()*items.length)]
